@@ -24,6 +24,7 @@ void engine_DrawRectangle(int x, int y, int w, int h, ColorMaker Color) {
 void EngineGameMain(void (*BeforeLoop)(), void (*OnLoop)()) {
     ::ShowWindow(window.getSystemHandle(), SW_MAXIMIZE);
     BeforeLoop();
+    window.setFramerateLimit(60);
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {

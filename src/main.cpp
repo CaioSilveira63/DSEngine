@@ -15,7 +15,7 @@ void BeforeLoop() {
 
 // Draw and physics
 void OnLoop() {
-    ColorMaker Cor = ColorMaker(0, 255, 0);
+    ColorMaker Cor = ColorMaker(255, 0, 0);
     Draw_Rectangle(10, 10, 100, 50, Cor);
 }
 
